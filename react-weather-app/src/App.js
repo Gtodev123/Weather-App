@@ -42,8 +42,8 @@ function App () {
             {data.main ? <h1>{data.main.temp.toFixed()} °C</h1> : null}
           </div>
           <div className="description">
-            {data.weather ? <p>{data.weather[0].main} <img className="iconWeather" src ={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} 
-         alt="icon" /></p> : null} 
+            {data.weather ? <div className="iconWeather"><p className="iconText">{data.weather[0].main}</p> <img className="iconWeather" src ={`http://openweathermap.org/img/w/${data.weather[0].icon}.png`} 
+         alt="icon" /></div> : null} 
           </div>
         </div>
 

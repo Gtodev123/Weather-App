@@ -14,8 +14,11 @@ body {
   
 }
 
-p {
-  font-size: 1.6rem;
+.iconWeather {
+  font-size: 2rem;
+}
+.iconText {
+  padding-left: 8px;
 }
 
 h1 {
@@ -28,6 +31,10 @@ h1 {
   position: relative;
   background-color: rgba(0,0,0,0.4);
   color:antiquewhite;
+}
+
+.app .description {
+  position: relative;
 }
 
 .app::before {
@@ -44,7 +51,7 @@ h1 {
 .container {
   height: 100%;
   max-width: 700px;
-  height: 700px;
+  height: auto;
   margin: auto;
   padding: 0 1rem;
   position: relative;
